@@ -8,9 +8,9 @@ updates:
     time: "04:00"
   open-pull-requests-limit: 99
   reviewers:
-  - dadoonet
+  - mastawoj24
   assignees:
-  - dadoonet
+  - mastawoj24
   labels:
   - update
   milestone: 27
@@ -25,9 +25,9 @@ updates:
     time: "04:00"
   open-pull-requests-limit: 99
   reviewers:
-  - dadoonet
+  - mastawoj24
   assignees:
-  - dadoonet
+  - mastawoj24
   labels:
   - update
   milestone: 27

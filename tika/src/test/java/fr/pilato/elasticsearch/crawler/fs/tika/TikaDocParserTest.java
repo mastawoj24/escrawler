@@ -62,7 +62,7 @@ public class TikaDocParserTest extends DocParserTestCase {
     }
 
     /**
-     * Test case for <a href="https://github.com/dadoonet/fscrawler/issues/162">https://github.com/dadoonet/fscrawler/issues/162</a>
+     * Test case for <a href="https://github.com/mastawoj24/fscrawler/issues/162">https://github.com/mastawoj24/fscrawler/issues/162</a>
      */
     @Test
     public void testLangDetect162() throws IOException {
@@ -80,7 +80,7 @@ public class TikaDocParserTest extends DocParserTestCase {
     }
 
     /**
-     * Test case for <a href="https://github.com/dadoonet/fscrawler/issues/221">https://github.com/dadoonet/fscrawler/issues/221</a>
+     * Test case for <a href="https://github.com/mastawoj24/fscrawler/issues/221">https://github.com/mastawoj24/fscrawler/issues/221</a>
      */
     @Test
     public void testPdfIssue221() throws IOException {
@@ -116,7 +116,7 @@ public class TikaDocParserTest extends DocParserTestCase {
     }
 
     /**
-     * Test case for <a href="https://github.com/dadoonet/fscrawler/issues/163">https://github.com/dadoonet/fscrawler/issues/163</a>
+     * Test case for <a href="https://github.com/mastawoj24/fscrawler/issues/163">https://github.com/mastawoj24/fscrawler/issues/163</a>
      */
     @Test
     public void testXmlIssue163() throws IOException {
@@ -275,7 +275,7 @@ public class TikaDocParserTest extends DocParserTestCase {
     }
 
     /**
-     * Test for #87: <a href="https://github.com/dadoonet/fscrawler/issues/87">https://github.com/dadoonet/fscrawler/issues/87</a>
+     * Test for #87: <a href="https://github.com/mastawoj24/fscrawler/issues/87">https://github.com/mastawoj24/fscrawler/issues/87</a>
      */
     @Test
     public void testExtractFromMp3() throws IOException {
@@ -718,7 +718,7 @@ public class TikaDocParserTest extends DocParserTestCase {
     }
 
     /**
-     * Test case for <a href="https://github.com/dadoonet/fscrawler/issues/1097">https://github.com/dadoonet/fscrawler/issues/1097</a>.
+     * Test case for <a href="https://github.com/mastawoj24/fscrawler/issues/1097">https://github.com/mastawoj24/fscrawler/issues/1097</a>.
      * Related to <a href="https://issues.apache.org/jira/browse/TIKA-3364">https://issues.apache.org/jira/browse/TIKA-3364</a>.
      * @throws IOException In case something goes wrong
      */
@@ -782,7 +782,7 @@ public class TikaDocParserTest extends DocParserTestCase {
     }
 
     /**
-     * Test case for <a href="https://github.com/dadoonet/fscrawler/issues/834">https://github.com/dadoonet/fscrawler/issues/834</a>.
+     * Test case for <a href="https://github.com/mastawoj24/fscrawler/issues/834">https://github.com/mastawoj24/fscrawler/issues/834</a>.
      * @throws IOException In case something goes wrong
      */
     @Test

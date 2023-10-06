@@ -77,12 +77,12 @@ Pull the Docker image:
 
 .. code:: sh
 
-   docker pull dadoonet/fscrawler
+   docker pull mastawoj24/fscrawler
 
 Run it:
 
 .. code:: sh
 
-   docker run dadoonet/fscrawler job
+   docker run mastawoj24/fscrawler job
 
 

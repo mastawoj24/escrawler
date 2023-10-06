@@ -49,7 +49,7 @@ The job file (``~/.fscrawler/test/_settings.yaml``) for the job name ``test`` mu
      # do you REALLY want to store every file as a copy in the index ? Then set this to true
      store_source: false
 
-     # you may want to store (partial) content of the file (see indexed_chars)	 
+     # you may want to store (partial) content of the file (see indexed_chars)
      index_content: true
 
      # how much data from the content of the file should be indexed (and stored inside the index), set to 0 if you need checksum, but no content at all to be indexed
@@ -77,7 +77,7 @@ The job file (``~/.fscrawler/test/_settings.yaml``) for the job name ``test`` mu
    server:
      hostname: "localhost"
      port: 22
-     username: "dadoonet"
+     username: "mastawoj24"
      password: "password"
      protocol: "SSH"
      pem_path: "/path/to/pemfile"

@@ -209,7 +209,7 @@ fi
 if [ ${DRY_RUN} -eq 0 ]
 then
     echo "Inspect DockerHub"
-    open https://hub.docker.com/r/dadoonet/fscrawler/tags
+    open https://hub.docker.com/r/mastawoj24/fscrawler/tags
     if promptyn "Is the DockerHub repository ok?"
     then
         echo "We can continue the release process."

@@ -34,7 +34,7 @@ import org.junit.Test;
 public class FsCrawlerTestXmlSupportIT extends AbstractFsCrawlerITCase {
 
     /**
-     * Test case for issue #185: <a href="https://github.com/dadoonet/fscrawler/issues/185">https://github.com/dadoonet/fscrawler/issues/185</a> : Add xml_support setting
+     * Test case for issue #185: <a href="https://github.com/mastawoj24/fscrawler/issues/185">https://github.com/mastawoj24/fscrawler/issues/185</a> : Add xml_support setting
      */
     @Test
     public void test_xml_enabled() throws Exception {

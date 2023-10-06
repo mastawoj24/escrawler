@@ -25,7 +25,7 @@
         <module>contrib</module>
     </modules>
     <name>FSCrawler</name>
-    <url>https://github.com/dadoonet/fscrawler/</url>
+    <url>https://github.com/mastawoj24/fscrawler/</url>
     <description>FS Crawler offers a simple way to index binary files into elasticsearch.</description>
 
     <licenses>
@@ -118,7 +118,7 @@
 
     <developers>
         <developer>
-            <id>dadoonet</id>
+            <id>mastawoj24</id>
             <name>David Pilato</name>
             <email>david@pilato.fr</email>
             <url>https://david.pilato.fr/</url>
@@ -127,14 +127,14 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git@github.com:dadoonet/fscrawler.git</connection>
-        <url>scm:git:git@github.com:dadoonet/fscrawler.git</url>
-        <developerConnection>scm:git:git@github.com:dadoonet/fscrawler.git</developerConnection>
+        <connection>scm:git:git@github.com:mastawoj24/fscrawler.git</connection>
+        <url>scm:git:git@github.com:mastawoj24/fscrawler.git</url>
+        <developerConnection>scm:git:git@github.com:mastawoj24/fscrawler.git</developerConnection>
     </scm>
 
     <issueManagement>
         <system>GitHub</system>
-        <url>https://github.com/dadoonet/fscrawler/issues/</url>
+        <url>https://github.com/mastawoj24/fscrawler/issues/</url>
     </issueManagement>
 
     <build>
@@ -442,7 +442,7 @@
                         <smtpHost>auth.smtp.1and1.fr</smtpHost>
                         <smtpPort implementation="java.lang.Integer">465</smtpPort>
                         <sslMode>true</sslMode>
-                        <fromDeveloperId>dadoonet</fromDeveloperId>
+                        <fromDeveloperId>mastawoj24</fromDeveloperId>
                         <toAddresses>
                             <toAddress implementation="java.lang.String">discuss+community-plugins@elastic.co</toAddress>
                         </toAddresses>
@@ -1102,7 +1102,7 @@
         <profile>
             <id>release</id>
             <properties>
-                <!-- The ocr version will be the default one for anyone trying docker pull dadoonet/fscrawler -->
+                <!-- The ocr version will be the default one for anyone trying docker pull mastawoj24/fscrawler -->
                 <docker.ocr.tags.1>latest</docker.ocr.tags.1>
             </properties>
             <build>

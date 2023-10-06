@@ -18,7 +18,7 @@
         <!--suppress UnresolvedMavenProperty -->
         <docker.skip>${env.DOCKER_SKIP}</docker.skip>
         <docker.verbose>build</docker.verbose>
-        <docker.username>dadoonet</docker.username>
+        <docker.username>mastawoj24</docker.username>
         <!-- The following assumes that each submodule will be overwritten. -->
         <module.name>es7</module.name>
 
@@ -30,7 +30,7 @@
         <docker.noocr.dockerFile>${project.basedir}/src/main/docker/Dockerfile</docker.noocr.dockerFile>
         <docker.noocr.assembly.descriptor>${project.basedir}/src/main/assembly/assembly.xml</docker.noocr.assembly.descriptor>
         <docker.noocr.assembly.mode>tgz</docker.noocr.assembly.mode>
-        <!-- We use this tag to make easy using docker pull dadoonet/fscrawler:noocr -->
+        <!-- We use this tag to make easy using docker pull mastawoj24/fscrawler:noocr -->
         <docker.noocr.tags.0>noocr</docker.noocr.tags.0>
 
         <!-- install tesseract-ocr and all language files -->
@@ -41,7 +41,7 @@
         <docker.ocr.assembly.descriptor>${docker.noocr.assembly.descriptor}</docker.ocr.assembly.descriptor>
         <docker.ocr.assembly.mode>${docker.noocr.assembly.mode}</docker.ocr.assembly.mode>
         <docker.ocr.args.langsPkg>imagemagick tesseract-ocr tesseract-ocr-all</docker.ocr.args.langsPkg>
-        <!-- The ocr version will be the default one for anyone trying docker pull dadoonet/fscrawler:VERSION -->
+        <!-- The ocr version will be the default one for anyone trying docker pull mastawoj24/fscrawler:VERSION -->
         <docker.ocr.tags.0>${project.version}</docker.ocr.tags.0>
         <docker.ocr.tags.1>latest</docker.ocr.tags.1>
 

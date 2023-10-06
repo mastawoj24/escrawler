@@ -35,7 +35,7 @@ import static org.hamcrest.Matchers.is;
 public class FsCrawlerTestIgnoreFoldersIT extends AbstractFsCrawlerITCase {
 
     /**
-     * Test case for #155: <a href="https://github.com/dadoonet/fscrawler/issues/155">https://github.com/dadoonet/fscrawler/issues/155</a> : New option: do not index folders
+     * Test case for #155: <a href="https://github.com/mastawoj24/fscrawler/issues/155">https://github.com/mastawoj24/fscrawler/issues/155</a> : New option: do not index folders
      */
     @Test
     public void test_ignore_folders() throws Exception {

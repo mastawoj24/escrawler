@@ -71,14 +71,14 @@ When FSCrawler needs to create the doc index, it applies some default
 settings and mappings which are read from
 ``~/.fscrawler/_default/7/_settings.json``. You can read its content
 from `the
-source <https://github.com/dadoonet/fscrawler/blob/master/settings/src/main/resources/fr/pilato/elasticsearch/crawler/fs/_default/7/_settings.json>`__.
+source <https://github.com/mastawoj24/fscrawler/blob/master/settings/src/main/resources/fr/pilato/elasticsearch/crawler/fs/_default/7/_settings.json>`__.
 
 Settings define an analyzer named ``fscrawler_path`` which uses a `path
 hierarchy
 tokenizer <https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-pathhierarchy-tokenizer.html>`__.
 
 FSCrawler applies as well a mapping automatically for the folders which can also be
-read from `the source <https://github.com/dadoonet/fscrawler/blob/master/settings/src/main/resources/fr/pilato/elasticsearch/crawler/fs/_default/7/_settings_folder.json>`__.
+read from `the source <https://github.com/mastawoj24/fscrawler/blob/master/settings/src/main/resources/fr/pilato/elasticsearch/crawler/fs/_default/7/_settings_folder.json>`__.
 
 You can also display the index mapping being used with Kibana:
 

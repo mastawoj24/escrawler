@@ -79,7 +79,7 @@ public class FsSettingsParserTest extends AbstractFSCrawlerTestCase {
     private static final Server SERVER_EMPTY = Server.builder().build();
     private static final Server SERVER_FULL = Server.builder()
             .setHostname("127.0.0.1")
-            .setUsername("dadoonet")
+            .setUsername("mastawoj24")
             .setPassword("WhATDidYOUexPECt?")
             .setPort(22)
             .setProtocol("SSH")
@@ -324,7 +324,7 @@ public class FsSettingsParserTest extends AbstractFSCrawlerTestCase {
                 "    \"url\" : \"/path/to/docs\"\n" +
                 "  },\n" +
                 "  \"server\" : {\n" +
-                "    \"username\" : \"dadoonet\",\n" +
+                "    \"username\" : \"mastawoj24\",\n" +
                 "    \"password\" : \"" + SERVER_FULL.getPassword() + "\"\n" +
                 "  },\n" +
                 "  \"elasticsearch\" : {\n" +
@@ -344,7 +344,7 @@ public class FsSettingsParserTest extends AbstractFSCrawlerTestCase {
                 "fs:\n" +
                 "  url: \"/path/to/docs\"\n" +
                 "server:\n" +
-                "  username: \"dadoonet\"\n" +
+                "  username: \"mastawoj24\"\n" +
                 "  password: \"" + SERVER_FULL.getPassword() + "\"\n" +
                 "elasticsearch:\n" +
                 "  username: \"username\"\n" +

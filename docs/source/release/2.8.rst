@@ -10,7 +10,7 @@ New features
 Fixed Bugs
 ----------
 
-* Fix starting fscrawler with Docker. Thanks to dadoonet.
+* Fix starting fscrawler with Docker. Thanks to mastawoj24.
 * fix: not working optional libraries (e.g. jpeg2000). Thanks to NickUfer.
 * Add procps apt package to container install. Thanks to cwperry.
 * File logs missing in docker container. Thanks to helsonxiao.
@@ -19,7 +19,7 @@ Changes
 -------
 
 * Bump log4j-core from 2.14.1 to 2.15.0.
-* Update to Tika 2.1. Thanks to dadoonet.
+* Update to Tika 2.1. Thanks to mastawoj24.
 
-Thanks to ``@sahin52``, ``@dfbm``, ``@NickUfer``, ``@cwperry``, ``@helsonxiao``, ``@dadoonet``
+Thanks to ``@sahin52``, ``@dfbm``, ``@NickUfer``, ``@cwperry``, ``@helsonxiao``, ``@mastawoj24``
 for this release!

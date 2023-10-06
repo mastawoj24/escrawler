@@ -37,7 +37,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 /**
- * @author dadoonet (David Pilato)
+ * @author mastawoj24 (David Pilato)
  */
 public class FsCrawlerImpl implements AutoCloseable {
 

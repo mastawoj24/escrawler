@@ -37,7 +37,7 @@ public class FsCrawlerImplTest extends AbstractFSCrawlerTestCase {
     }
 
     /**
-     * Test case for issue #185: <a href="https://github.com/dadoonet/fscrawler/issues/185">https://github.com/dadoonet/fscrawler/issues/185</a> : Add xml_support setting
+     * Test case for issue #185: <a href="https://github.com/mastawoj24/fscrawler/issues/185">https://github.com/mastawoj24/fscrawler/issues/185</a> : Add xml_support setting
      */
     @SuppressWarnings("resource")
     @Test(expected = RuntimeException.class)

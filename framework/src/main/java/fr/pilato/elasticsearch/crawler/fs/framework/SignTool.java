@@ -25,7 +25,7 @@ import java.security.NoSuchAlgorithmException;
 /**
  * Utility class to sign *things*
  *
- * @author David Pilato (aka dadoonet)
+ * @author David Pilato (aka mastawoj24)
  */
 public class SignTool {
 

@@ -214,7 +214,7 @@ public abstract class FsParserAbstract extends FsParser {
     private void updateFsJob(String jobName, LocalDateTime scanDate) throws Exception {
         // We need to round that latest date to the lower second and
         // remove 2 seconds.
-        // See #82: https://github.com/dadoonet/fscrawler/issues/82
+        // See #82: https://github.com/mastawoj24/fscrawler/issues/82
         scanDate = scanDate.minus(2, ChronoUnit.SECONDS);
         FsJob fsJob = FsJob.builder()
                 .setName(jobName)
@@ -258,7 +258,7 @@ public abstract class FsParserAbstract extends FsParser {
 
                     String virtualFileName = computeVirtualPathName(stats.getRootPath(), computeRealPathName(filepath, filename));
 
-                    // https://github.com/dadoonet/fscrawler/issues/1 : Filter documents
+                    // https://github.com/mastawoj24/fscrawler/issues/1 : Filter documents
                     boolean isIndexable = isIndexable(child.isDirectory(), virtualFileName, fsSettings.getFs().getIncludes(), fsSettings.getFs().getExcludes());
 
                     logger.debug("[{}] can be indexed: [{}]", virtualFileName, isIndexable);
@@ -429,10 +429,10 @@ public abstract class FsParserAbstract extends FsParser {
 
             // If needed, we generate the content in addition to metadata
             if (fsSettings.getFs().isJsonSupport()) {
-                // https://github.com/dadoonet/fscrawler/issues/5 : Support JSon files
+                // https://github.com/mastawoj24/fscrawler/issues/5 : Support JSon files
                 doc.setObject(asMap(inputStream));
             } else if (fsSettings.getFs().isXmlSupport()) {
-                // https://github.com/dadoonet/fscrawler/issues/185 : Support Xml files
+                // https://github.com/mastawoj24/fscrawler/issues/185 : Support Xml files
                 doc.setObject(XmlDocParser.generateMap(inputStream));
             } else {
                 // Extracting content with Tika

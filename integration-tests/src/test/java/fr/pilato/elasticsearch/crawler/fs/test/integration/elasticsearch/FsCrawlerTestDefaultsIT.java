@@ -84,7 +84,7 @@ public class FsCrawlerTestDefaultsIT extends AbstractFsCrawlerITCase {
     }
 
     /**
-     * Test case for #183: <a href="https://github.com/dadoonet/fscrawler/issues/183">https://github.com/dadoonet/fscrawler/issues/183</a> : Optimize document and folder mappings
+     * Test case for #183: <a href="https://github.com/mastawoj24/fscrawler/issues/183">https://github.com/mastawoj24/fscrawler/issues/183</a> : Optimize document and folder mappings
      * We want to make sure we can highlight documents even if we don't store fields
      */
     @Test

@@ -53,18 +53,18 @@ Pull the Docker image:
 
 .. code:: sh
 
-   docker pull dadoonet/fscrawler
+   docker pull mastawoj24/fscrawler
 
 .. note::
 
     This image is very big (1.2+gb) as it contains `Tesseract <https://tesseract-ocr.github.io/tessdoc/>`__ and
     all the `trained language data <https://tesseract-ocr.github.io/tessdoc/Data-Files.html>`__.
     If you don't want to use OCR at all, you can use a smaller image (around 530mb) by pulling instead
-    ``dadoonet/fscrawler:noocr``
+    ``mastawoj24/fscrawler:noocr``
 
     .. code:: sh
 
-       docker pull dadoonet/fscrawler:noocr
+       docker pull mastawoj24/fscrawler:noocr
 
 
 Let say your documents are located in ``~/tmp`` dir and you want to store your fscrawler jobs in ``~/.fscrawler``.
@@ -72,7 +72,7 @@ You can run FSCrawler with:
 
 .. code:: sh
 
-   docker run -it --rm -v ~/.fscrawler:/root/.fscrawler -v ~/tmp:/tmp/es:ro dadoonet/fscrawler fscrawler job_name
+   docker run -it --rm -v ~/.fscrawler:/root/.fscrawler -v ~/tmp:/tmp/es:ro mastawoj24/fscrawler fscrawler job_name
 
 On the first run, if the job does not exist yet in ``~/.fscrawler``, FSCrawler will ask you if you want to create it:
 
@@ -271,7 +271,7 @@ And, prepare the following ``docker-compose.yml``. You will find this example in
 
       # FSCrawler
       fscrawler:
-        image: dadoonet/fscrawler:$FSCRAWLER_VERSION
+        image: mastawoj24/fscrawler:$FSCRAWLER_VERSION
         container_name: fscrawler
         restart: always
         volumes:
@@ -512,7 +512,7 @@ And, prepare the following ``docker-compose.yml``. You will find this example in
 
       # FSCrawler
       fscrawler:
-        image: dadoonet/fscrawler:$FSCRAWLER_VERSION
+        image: mastawoj24/fscrawler:$FSCRAWLER_VERSION
         container_name: fscrawler
         restart: on-failure
         volumes:

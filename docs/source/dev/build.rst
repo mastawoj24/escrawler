@@ -2,7 +2,7 @@ Building the project
 --------------------
 
 This project is built with `Maven <https://maven.apache.org/>`_. It needs Java >= 1.11.
-Source code is available on `GitHub <https://github.com/dadoonet/fscrawler/>`_.
+Source code is available on `GitHub <https://github.com/mastawoj24/fscrawler/>`_.
 Thanks to `JetBrains <https://www.jetbrains.com/?from=FSCrawler>`_ for the IntelliJ IDEA License!
 
 .. image:: /_static/jetbrains.png
@@ -17,7 +17,7 @@ Clone the project
 
 Use git to clone the project locally::
 
-    git clone git@github.com:dadoonet/fscrawler.git
+    git clone git@github.com:mastawoj24/fscrawler.git
     cd fscrawler
 
 Build the artifact
@@ -234,7 +234,7 @@ you can manually use the ``docker.skip`` option::
 DockerHub publication
 ^^^^^^^^^^^^^^^^^^^^^
 
-To publish the latest build to `DockerHub <https://hub.docker.com/r/dadoonet/fscrawler/>`_ you can manually
+To publish the latest build to `DockerHub <https://hub.docker.com/r/mastawoj24/fscrawler/>`_ you can manually
 call ``docker:push`` maven task and provide credentials ``docker.push.username`` and ``docker.push.password``::
 
         mvn -f distribution/pom.xml docker:push \

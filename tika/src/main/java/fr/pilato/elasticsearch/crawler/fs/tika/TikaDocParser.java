@@ -61,7 +61,7 @@ public class TikaDocParser {
                                 MessageDigest messageDigest, long filesize) throws IOException {
         logger.trace("Generating document [{}]", fullFilename);
         // Extracting content with Tika
-        // See #38: https://github.com/dadoonet/fscrawler/issues/38
+        // See #38: https://github.com/mastawoj24/fscrawler/issues/38
         int indexedChars = 100000;
         if (fsSettings.getFs().getIndexedChars() != null) {
             if (fsSettings.getFs().getIndexedChars().percentage()) {
@@ -204,7 +204,7 @@ public class TikaDocParser {
                     // You need to change test/resources/log4j2.xml fr.pilato.elasticsearch.crawler.fs.tika level to trace
                     metadata("  assertThat(raw, hasEntry(\"{}\", \"{}\"));", metadataName, value);
 
-                    // We need to remove dots in field names if any. See https://github.com/dadoonet/fscrawler/issues/256
+                    // We need to remove dots in field names if any. See https://github.com/mastawoj24/fscrawler/issues/256
                     doc.getMeta().addRaw(metadataName.replaceAll("\\.", ":"), value);
                 }
             }

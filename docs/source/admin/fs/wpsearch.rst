@@ -19,7 +19,7 @@ FSCrawler can now send documents to `Workplace Search <https://www.elastic.co/wo
 
     To easily start locally with Workplace Search, follow the steps::
 
-        git clone git@github.com:dadoonet/fscrawler.git
+        git clone git@github.com:mastawoj24/fscrawler.git
         cd fscrawler
         cd contrib/docker-compose-workplacesearch
         docker-compose up
@@ -146,7 +146,7 @@ Automatic Custom Source Creation
 If the Custom Source id is not provided and no Custom Source exists with the same name, it will create automatically
 the Custom Source for you with all the default settings, which are read from
 ``~/.fscrawler/_default/7/_wpsearch_settings.json``. You can read its content from
-`the source <https://github.com/dadoonet/fscrawler/blob/master/settings/src/main/resources/fr/pilato/elasticsearch/crawler/fs/_default/7/_wpsearch_settings.json>`__.
+`the source <https://github.com/mastawoj24/fscrawler/blob/master/settings/src/main/resources/fr/pilato/elasticsearch/crawler/fs/_default/7/_wpsearch_settings.json>`__.
 
 If you want to define your own settings, you can either define your own Custom Source using the Workplace Search
 Administration UI or define a ``~/.fscrawler/_default/7/_wpsearch_settings.json`` document

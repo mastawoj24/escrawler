@@ -83,7 +83,7 @@ public class FsCrawlerTestRemoveDeletedIT extends AbstractFsCrawlerITCase {
     }
 
     /**
-     * Test case for #95: <a href="https://github.com/dadoonet/fscrawler/issues/95">https://github.com/dadoonet/fscrawler/issues/95</a> : Folder index is not getting delete on delete of folder
+     * Test case for #95: <a href="https://github.com/mastawoj24/fscrawler/issues/95">https://github.com/mastawoj24/fscrawler/issues/95</a> : Folder index is not getting delete on delete of folder
      */
     @Test
     public void test_remove_folder_deleted_enabled() throws Exception {
@@ -108,7 +108,7 @@ public class FsCrawlerTestRemoveDeletedIT extends AbstractFsCrawlerITCase {
     }
 
     /**
-     * Test case for <a href="https://github.com/dadoonet/fscrawler/issues/110">https://github.com/dadoonet/fscrawler/issues/110</a>
+     * Test case for <a href="https://github.com/mastawoj24/fscrawler/issues/110">https://github.com/mastawoj24/fscrawler/issues/110</a>
      * @throws Exception In case something is wrong
      */
     @Test
@@ -129,7 +129,7 @@ public class FsCrawlerTestRemoveDeletedIT extends AbstractFsCrawlerITCase {
     }
 
     /**
-     * Test case for <a href="https://github.com/dadoonet/fscrawler/issues/379">https://github.com/dadoonet/fscrawler/issues/379</a>
+     * Test case for <a href="https://github.com/mastawoj24/fscrawler/issues/379">https://github.com/mastawoj24/fscrawler/issues/379</a>
      * @throws Exception In case something is wrong
      */
     @Test
@@ -160,7 +160,7 @@ public class FsCrawlerTestRemoveDeletedIT extends AbstractFsCrawlerITCase {
     }
 
     /**
-     * Test case for #136: <a href="https://github.com/dadoonet/fscrawler/issues/136">https://github.com/dadoonet/fscrawler/issues/136</a> : Moving existing files does not index new files
+     * Test case for #136: <a href="https://github.com/mastawoj24/fscrawler/issues/136">https://github.com/mastawoj24/fscrawler/issues/136</a> : Moving existing files does not index new files
      */
     @Test
     public void test_moving_files() throws Exception {
@@ -195,7 +195,7 @@ public class FsCrawlerTestRemoveDeletedIT extends AbstractFsCrawlerITCase {
     }
 
     /**
-     * Test case for issue #60: <a href="https://github.com/dadoonet/fscrawler/issues/60">https://github.com/dadoonet/fscrawler/issues/60</a> : new files are not added
+     * Test case for issue #60: <a href="https://github.com/mastawoj24/fscrawler/issues/60">https://github.com/mastawoj24/fscrawler/issues/60</a> : new files are not added
      */
     @Test
     public void test_add_new_file() throws Exception {

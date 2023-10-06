@@ -34,7 +34,7 @@ public class FsCrawlerTestTikaConfigPathIT extends AbstractFsCrawlerITCase {
 
   @Test
   public void test_tika_config_path() throws Exception {
-    assumeTrue("We are skipping this test. See discussion at https://github.com/dadoonet/fscrawler/pull/1403#issuecomment-1077912549", false);
+    assumeTrue("We are skipping this test. See discussion at https://github.com/mastawoj24/fscrawler/pull/1403#issuecomment-1077912549", false);
     Fs fs = startCrawlerDefinition()
         .setTikaConfigPath(currentTestResourceDir.resolve("config/tikaConfig.xml").toString())
         .addExclude("/config/*")

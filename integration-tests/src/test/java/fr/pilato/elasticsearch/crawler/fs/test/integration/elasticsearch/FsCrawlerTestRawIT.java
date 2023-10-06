@@ -38,7 +38,7 @@ import static org.hamcrest.Matchers.notNullValue;
 public class FsCrawlerTestRawIT extends AbstractFsCrawlerITCase {
 
     /**
-     * Test case for issue #439: <a href="https://github.com/dadoonet/fscrawler/issues/439">https://github.com/dadoonet/fscrawler/issues/439</a> : Date Mapping issue in RAW field
+     * Test case for issue #439: <a href="https://github.com/mastawoj24/fscrawler/issues/439">https://github.com/mastawoj24/fscrawler/issues/439</a> : Date Mapping issue in RAW field
      */
     @Test
     public void test_mapping() throws Exception {

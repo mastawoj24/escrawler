@@ -175,7 +175,7 @@ services:
 
   # FSCrawler
   fscrawler:
-    image: dadoonet/fscrawler:$FSCRAWLER_VERSION
+    image: mastawoj24/fscrawler:$FSCRAWLER_VERSION
     container_name: fscrawler
     restart: on-failure
     volumes:

@@ -20,19 +20,19 @@ You need to install a version matching your Elasticsearch version:
 | 6.x, 7.x           | 2.7           | 2021-08-05 | [2.7](https://fscrawler.readthedocs.io/en/fscrawler-2.7/)                     |
 | 2.x, 5.x, 6.x      | 2.6           | 2019-01-09 | [2.6](https://fscrawler.readthedocs.io/en/fscrawler-2.6)                      |
 | 2.x, 5.x, 6.x      | 2.5           | 2018-08-04 | [2.5](https://fscrawler.readthedocs.io/en/fscrawler-2.5)                      |
-| 2.x, 5.x, 6.x      | 2.4           | 2017-08-11 | [2.4](https://github.com/dadoonet/fscrawler/blob/fscrawler-2.4/README.md)     |
-| 2.x, 5.x, 6.x      | 2.3           | 2017-07-10 | [2.3](https://github.com/dadoonet/fscrawler/blob/fscrawler-2.3/README.md)     |
-| 1.x, 2.x, 5.x      | 2.2           | 2017-02-03 | [2.2](https://github.com/dadoonet/fscrawler/blob/fscrawler-2.2/README.md)     |
-| 1.x, 2.x, 5.x      | 2.1           | 2016-07-26 | [2.1](https://github.com/dadoonet/fscrawler/blob/fscrawler-2.1/README.md)     |
-|    es-2.0          | 2.0.0         | 2015-10-30 | [2.0.0](https://github.com/dadoonet/fscrawler/blob/fscrawler-2.0.0/README.md) |
+| 2.x, 5.x, 6.x      | 2.4           | 2017-08-11 | [2.4](https://github.com/mastawoj24/fscrawler/blob/fscrawler-2.4/README.md)     |
+| 2.x, 5.x, 6.x      | 2.3           | 2017-07-10 | [2.3](https://github.com/mastawoj24/fscrawler/blob/fscrawler-2.3/README.md)     |
+| 1.x, 2.x, 5.x      | 2.2           | 2017-02-03 | [2.2](https://github.com/mastawoj24/fscrawler/blob/fscrawler-2.2/README.md)     |
+| 1.x, 2.x, 5.x      | 2.1           | 2016-07-26 | [2.1](https://github.com/mastawoj24/fscrawler/blob/fscrawler-2.1/README.md)     |
+|    es-2.0          | 2.0.0         | 2015-10-30 | [2.0.0](https://github.com/mastawoj24/fscrawler/blob/fscrawler-2.0.0/README.md) |
 
 ## Build and Quality Status
 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/fr.pilato.elasticsearch.crawler/fscrawler-distribution/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/fr.pilato.elasticsearch.crawler/fscrawler-distribution/)
-[![Build](https://github.com/dadoonet/fscrawler/actions/workflows/maven.yml/badge.svg)](https://github.com/dadoonet/fscrawler/actions/workflows/maven.yml)
+[![Build](https://github.com/mastawoj24/fscrawler/actions/workflows/maven.yml/badge.svg)](https://github.com/mastawoj24/fscrawler/actions/workflows/maven.yml)
 [![Documentation Status](https://readthedocs.org/projects/fscrawler/badge/?version=latest)](https://fscrawler.readthedocs.io/en/latest/?badge=latest)
-[![Code Quality: Java](https://img.shields.io/lgtm/grade/java/g/dadoonet/fscrawler.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/dadoonet/fscrawler/context:java)
-[![Total Alerts](https://img.shields.io/lgtm/alerts/g/dadoonet/fscrawler.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/dadoonet/fscrawler/alerts)
+[![Code Quality: Java](https://img.shields.io/lgtm/grade/java/g/mastawoj24/fscrawler.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/mastawoj24/fscrawler/context:java)
+[![Total Alerts](https://img.shields.io/lgtm/alerts/g/mastawoj24/fscrawler.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/mastawoj24/fscrawler/alerts)
 
 [![Lines](https://sonarcloud.io/api/project_badges/measure?project=fr.pilato.elasticsearch.crawler:fscrawler-parent&metric=ncloc)](https://sonarcloud.io/project/issues?id=fr.pilato.elasticsearch.crawler%3Afscrawler-parent)
 [![Duplicated Lines](https://sonarcloud.io/api/project_badges/measure?project=fr.pilato.elasticsearch.crawler:fscrawler-parent&metric=duplicated_lines_density)](https://sonarcloud.io/project/issues?id=fr.pilato.elasticsearch.crawler%3Afscrawler-parent)
@@ -52,7 +52,7 @@ The guide has been moved to [ReadTheDocs](https://fscrawler.readthedocs.io/en/la
 
 Works on my machine - and yours ! Spin up pre-configured, standardized dev environments of this repository, by clicking on the button below.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#/https://github.com/dadoonet/fscrawler)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#/https://github.com/mastawoj24/fscrawler)
 
 # License
 

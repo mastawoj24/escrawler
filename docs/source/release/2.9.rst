@@ -4,7 +4,7 @@ Version 2.9
 New features
 ------------
 
-* Add more default displayed fields in Workplace Search. Thanks to dadoonet.
+* Add more default displayed fields in Workplace Search. Thanks to mastawoj24.
 
 Documentation
 -------------
@@ -14,10 +14,10 @@ Documentation
 Changes
 -------
 
-* Switch to the new sonatype service. Thanks to dadoonet.
-* Bump log4j to 2.17.1. Thanks to dadoonet.
-* Update to Tika 2.2.1. Thanks to dadoonet.
-* Update to Elasticsearch 7.16.2. Thanks to dadoonet.
+* Switch to the new sonatype service. Thanks to mastawoj24.
+* Bump log4j to 2.17.1. Thanks to mastawoj24.
+* Update to Tika 2.2.1. Thanks to mastawoj24.
+* Update to Elasticsearch 7.16.2. Thanks to mastawoj24.
 
-Thanks to ``@cbb-colab``, ``@dadoonet``
+Thanks to ``@cbb-colab``, ``@mastawoj24``
 for this release!

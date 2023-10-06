@@ -22,7 +22,7 @@ package fr.pilato.elasticsearch.crawler.fs.beans;
 /**
  * Provide Scan Statistics
  *
- * @author David Pilato (aka dadoonet)
+ * @author David Pilato (aka mastawoj24)
  */
 public class ScanStatistic {
     private int nbDocScan;

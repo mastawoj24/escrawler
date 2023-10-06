@@ -354,7 +354,7 @@ public class FsCrawlerCli {
                 separatorLine("+", "+") +
                 bannerLine("You know, for Files!") +
                 bannerLine("Made from France with Love") +
-                bannerLine("Source: https://github.com/dadoonet/fscrawler/") +
+                bannerLine("Source: https://github.com/mastawoj24/fscrawler/") +
                 bannerLine("Documentation: https://fscrawler.readthedocs.io/") +
                 separatorLine("`", "'"));
     }

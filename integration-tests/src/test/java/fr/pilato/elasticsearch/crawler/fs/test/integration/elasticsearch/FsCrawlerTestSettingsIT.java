@@ -34,7 +34,7 @@ import static fr.pilato.elasticsearch.crawler.fs.framework.FsCrawlerUtil.INDEX_S
 public class FsCrawlerTestSettingsIT extends AbstractFsCrawlerITCase {
 
     /**
-     * Test for #83: <a href="https://github.com/dadoonet/fscrawler/issues/83">https://github.com/dadoonet/fscrawler/issues/83</a>
+     * Test for #83: <a href="https://github.com/mastawoj24/fscrawler/issues/83">https://github.com/mastawoj24/fscrawler/issues/83</a>
      */
     @Test
     public void test_time_value() throws Exception {

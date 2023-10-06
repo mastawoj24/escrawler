@@ -38,7 +38,7 @@ import static org.junit.Assume.assumeTrue;
 public class FsCrawlerTestUnparsableIT extends AbstractFsCrawlerITCase {
 
     /**
-     * Test for #105: <a href="https://github.com/dadoonet/fscrawler/issues/105">https://github.com/dadoonet/fscrawler/issues/105</a>
+     * Test for #105: <a href="https://github.com/mastawoj24/fscrawler/issues/105">https://github.com/mastawoj24/fscrawler/issues/105</a>
      */
     @Test
     public void test_unparsable() throws Exception {
@@ -49,7 +49,7 @@ public class FsCrawlerTestUnparsableIT extends AbstractFsCrawlerITCase {
     }
 
     /**
-     * Test case for <a href="https://github.com/dadoonet/fscrawler/issues/362">https://github.com/dadoonet/fscrawler/issues/362</a>
+     * Test case for <a href="https://github.com/mastawoj24/fscrawler/issues/362">https://github.com/mastawoj24/fscrawler/issues/362</a>
      * @throws Exception In case something is wrong
      */
     @Test

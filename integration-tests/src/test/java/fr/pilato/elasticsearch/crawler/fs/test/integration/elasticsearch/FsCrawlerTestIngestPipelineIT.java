@@ -39,7 +39,7 @@ import static org.junit.Assert.fail;
 public class FsCrawlerTestIngestPipelineIT extends AbstractFsCrawlerITCase {
 
     /**
-     * Test case for #234: <a href="https://github.com/dadoonet/fscrawler/issues/234">https://github.com/dadoonet/fscrawler/issues/234</a> : Support ingest pipeline processing
+     * Test case for #234: <a href="https://github.com/mastawoj24/fscrawler/issues/234">https://github.com/mastawoj24/fscrawler/issues/234</a> : Support ingest pipeline processing
      */
     @Test
     public void test_ingest_pipeline() throws Exception {
@@ -75,7 +75,7 @@ public class FsCrawlerTestIngestPipelineIT extends AbstractFsCrawlerITCase {
     }
 
     /**
-     * Test case for #392: <a href="https://github.com/dadoonet/fscrawler/issues/392">https://github.com/dadoonet/fscrawler/issues/392</a> : Support ingest pipeline processing
+     * Test case for #392: <a href="https://github.com/mastawoj24/fscrawler/issues/392">https://github.com/mastawoj24/fscrawler/issues/392</a> : Support ingest pipeline processing
      */
     @Test
     public void test_ingest_pipeline_392() throws Exception {
@@ -115,7 +115,7 @@ public class FsCrawlerTestIngestPipelineIT extends AbstractFsCrawlerITCase {
     }
 
     /**
-     * Test case for #490: <a href="https://github.com/dadoonet/fscrawler/issues/490">https://github.com/dadoonet/fscrawler/issues/490</a> : Missing ES pipeline
+     * Test case for #490: <a href="https://github.com/mastawoj24/fscrawler/issues/490">https://github.com/mastawoj24/fscrawler/issues/490</a> : Missing ES pipeline
      */
     @Test
     public void test_ingest_missing_pipeline_490() throws Exception {

@@ -32,7 +32,7 @@ import org.junit.Test;
 public class FsCrawlerTestIndexContentIT extends AbstractFsCrawlerITCase {
 
     /**
-     * Test for #103: <a href="https://github.com/dadoonet/fscrawler/issues/103">https://github.com/dadoonet/fscrawler/issues/103</a>
+     * Test for #103: <a href="https://github.com/mastawoj24/fscrawler/issues/103">https://github.com/mastawoj24/fscrawler/issues/103</a>
      */
     @Test
     public void test_index_content() throws Exception {
