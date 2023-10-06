@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<assembly>
+    <id>bin</id>
+    <formats>
+        <format>zip</format>
+    </formats>
+    <dependencySets>
+        <dependencySet>
+            <outputDirectory>/lib</outputDirectory>
+            <unpack>false</unpack>
+        </dependencySet>
+    </dependencySets>
+
+    <fileSets>
+        <fileSet>
+            <directory>src/main/scripts</directory>
+            <outputDirectory>bin</outputDirectory>
+            <includes>
+                <include>fscrawler*</include>
+            </includes>
+            <filtered>true</filtered>
+        </fileSet>
+        <fileSet>
+            <directory>../</directory>
+            <outputDirectory/>
+            <includes>
+                <include>LICENSE</include>
+                <include>NOTICE</include>
+                <include>README.md</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <directory>${project.parent.basedir}/cli/src/main/resources</directory>
+            <outputDirectory>config</outputDirectory>
+            <includes>
+                <include>log4j2.xml</include>
+                <include>log4j2-file.xml</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+</assembly>

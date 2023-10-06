@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>fr.pilato.elasticsearch.crawler</groupId>
+        <artifactId>fscrawler-parent</artifactId>
+        <version>2.10-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>fscrawler-distribution</artifactId>
+    <name>FSCrawler ZIP Distribution</name>
+
+    <properties>
+        <!-- Global configuration parameters for docker -->
+        <!-- By default, build docker images on each module. -->
+        <!--suppress UnresolvedMavenProperty -->
+        <docker.skip>${env.DOCKER_SKIP}</docker.skip>
+        <docker.verbose>build</docker.verbose>
+        <docker.username>dadoonet</docker.username>
+        <!-- The following assumes that each submodule will be overwritten. -->
+        <module.name>es7</module.name>
+
+        <!-- Docker Image Definitions -->
+        <!-- standard installation with no ocr -->
+        <docker.noocr.alias>${project.artifactId}-noocr</docker.noocr.alias>
+        <docker.noocr.name>${docker.username}/fscrawler:${project.version}-noocr</docker.noocr.name>
+        <docker.noocr.cacheFrom>${docker.noocr.name}</docker.noocr.cacheFrom>
+        <docker.noocr.dockerFile>${project.basedir}/src/main/docker/Dockerfile</docker.noocr.dockerFile>
+        <docker.noocr.assembly.descriptor>${project.basedir}/src/main/assembly/assembly.xml</docker.noocr.assembly.descriptor>
+        <docker.noocr.assembly.mode>tgz</docker.noocr.assembly.mode>
+        <!-- We use this tag to make easy using docker pull dadoonet/fscrawler:noocr -->
+        <docker.noocr.tags.0>noocr</docker.noocr.tags.0>
+
+        <!-- install tesseract-ocr and all language files -->
+        <docker.ocr.alias>${project.artifactId}-ocr</docker.ocr.alias>
+        <docker.ocr.name>${docker.username}/fscrawler:${project.version}-ocr-${module.name}</docker.ocr.name>
+        <docker.ocr.cacheFrom>${docker.ocr.name}</docker.ocr.cacheFrom>
+        <docker.ocr.dockerFile>${docker.noocr.dockerFile}</docker.ocr.dockerFile>
+        <docker.ocr.assembly.descriptor>${docker.noocr.assembly.descriptor}</docker.ocr.assembly.descriptor>
+        <docker.ocr.assembly.mode>${docker.noocr.assembly.mode}</docker.ocr.assembly.mode>
+        <docker.ocr.args.langsPkg>imagemagick tesseract-ocr tesseract-ocr-all</docker.ocr.args.langsPkg>
+        <!-- The ocr version will be the default one for anyone trying docker pull dadoonet/fscrawler:VERSION -->
+        <docker.ocr.tags.0>${project.version}</docker.ocr.tags.0>
+        <docker.ocr.tags.1>latest</docker.ocr.tags.1>
+
+        <distribution.mainClassName>fr.pilato.elasticsearch.crawler.fs.cli.FsCrawler</distribution.mainClassName>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>fr.pilato.elasticsearch.crawler</groupId>
+            <artifactId>fscrawler-cli</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>fr.pilato.elasticsearch.crawler</groupId>
+            <artifactId>fscrawler-elasticsearch-client</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-help-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+            </plugin>
+            <!-- Add/Edit items in META-INF/MANIFEST.MF -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>${distribution.mainClassName}</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.carrotsearch.randomizedtesting</groupId>
+                <artifactId>junit4-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <!-- There is no unit test, so we can skip that execution -->
+                        <id>unit-tests</id>
+                        <phase>none</phase>
+                    </execution>
+                    <execution>
+                        <!-- There is no integration test, so we can skip that execution -->
+                        <id>integration-tests</id>
+                        <phase>none</phase>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+            </plugin>
+
+            <!-- Generate the release zip file (run during package step) -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <appendAssemblyId>false</appendAssemblyId>
+                    <descriptors>
+                        <descriptor>src/main/assembly/assembly.xml</descriptor>
+                    </descriptors>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>generate-release-plugin</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- Generate and push the docker images -->
+            <plugin>
+                <groupId>io.fabric8</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <configuration>
+                    <authConfig>
+                        <push>
+                            <username>${docker.push.username}</username>
+                            <password>${docker.push.password}</password>
+                        </push>
+                    </authConfig>
+                    <!-- Create multiple images -->
+                    <images combine.self="override">
+                        <image>
+                            <external>
+                                <type>properties</type>
+                                <prefix>docker.noocr</prefix>
+                            </external>
+                        </image>
+                        <image>
+                            <external>
+                                <type>properties</type>
+                                <prefix>docker.ocr</prefix>
+                            </external>
+                        </image>
+                    </images>
+                </configuration>
+                <executions>
+                    <!-- Generate the docker images during the package phase -->
+                    <execution>
+                        <id>docker-build</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>build</goal>
+                        </goals>
+                    </execution>
+                    <!-- Push the docker images during the "deploy" phase -->
+                    <execution>
+                        <id>docker-push</id>
+                        <phase>deploy</phase>
+                        <goals>
+                            <goal>push</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <!-- There is no integration test, so we can skip that execution -->
+                        <id>start-elasticsearch</id>
+                        <phase>none</phase>
+                    </execution>
+                    <execution>
+                        <!-- There is no integration test, so we can skip that execution -->
+                        <id>stop-elasticsearch</id>
+                        <phase>none</phase>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
